@@ -74,7 +74,7 @@ app.post('/divide', (req, res) => {
   }
 
   // Division by zero check
-  if (num2 === 0) {
+  if (parseInt(num2) === 0) {
     return res.status(400).json({ status: 'error', message: 'Cannot divide by zero' });
   }
 
