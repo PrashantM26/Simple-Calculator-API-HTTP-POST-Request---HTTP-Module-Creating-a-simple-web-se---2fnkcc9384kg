@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -75,7 +75,8 @@ app.post('/divide', (req, res) => {
 
   // Division by zero check
   if (parseInt(num2) === 0) {
-    return res.status(400).json({ status: 'error', message: 'Cannot divide by zero' });
+    //return res.status(400).json({ status: 'error', message: 'Cannot divide by zero' });
+    return res.status(400).json({ error: "Cannot divide by zero" });
   }
 
   const result = num1 / num2;
@@ -87,14 +88,14 @@ const server = app.listen(4000, () => {
   console.log(`Server running on port 4000`);
 });
 
-module.exports = app;*/
+module.exports = app;
 
 
 
 
 
 
-const fs = require('fs');
+/*const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -188,4 +189,4 @@ const server = app.listen(4000, () => {
   console.log(`Server running on port 4000`);
 });
     
-module.exports = app;
+module.exports = app;*/
